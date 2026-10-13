@@ -1,5 +1,5 @@
-import spec from './data/reading-spec.js';
-import cardMap from './data/card-signal-map.js';
+import spec from './reading-spec.js';
+import cardMap from './card-signal-map.js';
 
 export const ENGINE_VERSION='public-final-1.0';
 export const VALID_DOMAINS=Object.freeze(['love','career','finance','health']);

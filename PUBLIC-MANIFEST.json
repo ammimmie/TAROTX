@@ -22,22 +22,22 @@
       "sha256": "595381e64c24d8312895ffce43b482d9e0670a9ad131a44d68c3673900e0c278"
     },
     {
-      "path": "assets/read-clean.webp",
+      "path": "read-clean.webp",
       "size": 252922,
       "sha256": "9ec291c99e5398fb1774364338272e0f3fa2faceca17dd58d0ae2e575139d7ca"
     },
     {
-      "path": "assets/wait-clean.webp",
+      "path": "wait-clean.webp",
       "size": 159726,
       "sha256": "2d27a278a812b8da9cd28e0feb7f2e238a5b6e89d87c2698d6becfcad4a7475e"
     },
     {
-      "path": "data/card-signal-map.js",
+      "path": "card-signal-map.js",
       "size": 76141,
       "sha256": "5ded1688569a8ac0951d50814542ec8b3b9c94ddb197d8e29e8a956838083e7a"
     },
     {
-      "path": "data/reading-spec.js",
+      "path": "reading-spec.js",
       "size": 168772,
       "sha256": "cc48a8880ea1eb1d186d59535f3388b1b5d9137d0d8e8fc4b7a1966381191669"
     },
