@@ -1,6 +1,6 @@
-<!doctype html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#100916"><meta name="description" content="TAROTX — เปิดไพ่ 3 ใบในห้องไพ่ลึกลับ พร้อมคำทำนายตามเรื่องที่เลือก"><title>TAROTX V3.2 — — Cinematic Mystic</title><style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Noto+Serif+Thai:wght@400;500;600;700&display=swap');
-:root{--gold:#f8ddab;--gold-dark:#bf935d;--white:#fdf3e9;--lavender:#d9aafd;--green:#abedc5;--panel:#181121;--serif:'Noto Serif Thai',Georgia,serif;--sans:'Noto Sans Thai',Arial,sans-serif;--w:1448;--h:1086}
-*{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden;background:#0c0812;color:var(--white);font-family:var(--sans)}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #b7f4c8;outline-offset:4px}img{max-width:100%;display:block}
+<!doctype html><html lang="th"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#100916"><meta name="description" content="TAROTX — เปิดไพ่ 3 ใบในห้องไพ่ลึกลับ พร้อมคำทำนายตามเรื่องที่เลือก"><title>TAROTX V3.4.2 — Single Font</title><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@300;400;500;600;700&display=swap');
+:root{--gold:#f8ddab;--gold-dark:#bf935d;--white:#fdf3e9;--lavender:#d9aafd;--green:#abedc5;--panel:#181121;--serif:'Noto Serif Thai',serif;--sans:'Noto Serif Thai',serif;--w:1448;--h:1086}
+*{box-sizing:border-box}html,body{height:100%;margin:0;overflow:hidden;background:#0c0812;color:var(--white);font-family:var(--serif)}button{font:inherit;cursor:pointer}button:focus-visible{outline:3px solid #b7f4c8;outline-offset:4px}img{max-width:100%;display:block}
 #viewport{width:100%;height:100dvh;display:grid;place-items:center;overflow:hidden;background:radial-gradient(ellipse at center,#2b123a 0%,#100a18 60%,#090610 100%)}
 .stage{position:relative;width:min(100vw,calc(100dvh * 1448 / 1086));height:min(100dvh,calc(100vw * 1086 / 1448));overflow:hidden;isolation:isolate;box-shadow:0 0 95px #000a;background:#110b1b;container-type:size;animation:sceneIn .4s ease both}
 .stage::before{content:"";position:absolute;inset:0;z-index:0;background-image:var(--scene);background-size:100% 100%;background-position:center;pointer-events:none}
@@ -20,7 +20,7 @@ button,.ui{position:relative;z-index:3}.click-target{position:absolute;border:no
 .invite-open:hover{box-shadow:0 0 36px 8px #dda1ff9c;border:1px solid #ffe1ae99}
 /* shared live top navigation on non-invitation stages */
 .topbar{position:absolute;top:0;left:0;right:0;height:6.8%;background:linear-gradient(#0c0815f5,#120b18c9);z-index:7;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid #efd4a749}
-.wordmark{background:none;color:var(--gold);border:0;font:500 clamp(20px,2.7cqw,37px)/1 Georgia,serif;letter-spacing:.13em;padding:0}
+.wordmark{background:none;color:var(--gold);border:0;font:500 clamp(20px,2.7cqw,37px)/1 var(--serif);letter-spacing:.13em;padding:0}
 .nav-group{display:flex;gap:clamp(9px,1.8cqw,28px);align-items:center}.nav-group button{background:none;border:0;color:#efe9e8;font-size:clamp(10px,1.13cqw,16px);padding:6px 0}.nav-group button:hover{color:#d9b9fd;text-shadow:0 0 12px #d9b9fd}
 .tag{font-size:clamp(10px,1.05cqw,14px);color:#efd9ad;background:#170f26d9;border:1px solid #e7ba7e6e;padding:9px 14px;border-radius:50px}
 /* category and ritual screens use the approved room art plus focused living glass */
@@ -47,7 +47,7 @@ button,.ui{position:relative;z-index:3}.click-target{position:absolute;border:no
 .selection-counter{position:absolute;top:79%;left:29%;width:42%;z-index:5;text-align:center;color:#f4dab4;font-size:clamp(10px,1.15cqw,16px);text-shadow:0 0 18px #25102b}
 /* waiting: dynamic count covers only baked 10 within orb and preserves all surrounding approved artwork */
 .count-cover{position:absolute;left:43.6%;top:40.5%;width:12.7%;height:18%;z-index:3;border-radius:50%;background:radial-gradient(ellipse,#2b1346 0%,#3f1b65e8 50%,#52277980 74%,transparent 81%);display:grid;place-items:center}
-.count-number{font:500 clamp(42px,6.4cqw,91px) Georgia,serif;color:#ffe4b9;text-shadow:0 0 17px #edacffd8;animation:fadeRise .5s ease both}
+.count-number{font:500 clamp(42px,6.4cqw,91px) var(--serif);color:#ffe4b9;text-shadow:0 0 17px #edacffd8;animation:fadeRise .5s ease both}
 .loading-message{position:absolute;z-index:5;left:26%;top:80.5%;width:48%;text-align:center;font-size:clamp(11px,1.1cqw,16px);color:#f9dfb8;background:#110a21b8;border-radius:40px;padding:7px 14px;border:1px solid #b88b7b50}
 .loading-wave{position:absolute;top:40.5%;left:43.6%;width:12.7%;height:18%;border-radius:50%;border:1px solid #deb8ffab;z-index:4;animation:breathe 2s infinite;pointer-events:none}
 /* revealed card: dynamic reading overlays mockup sample with real selected name, orientation, image and Thai copy */
@@ -55,11 +55,11 @@ button,.ui{position:relative;z-index:3}.click-target{position:absolute;border:no
 .card-stage:before{content:"";position:absolute;inset:-8px;border:1px solid #f3d8a5;border-radius:12px;box-shadow:0 0 20px #8b36d9a6;pointer-events:none}
 .card-stage img{height:100%;width:100%;object-fit:cover;border:6px double #e1b774;border-radius:10px;background:#1c102c;box-shadow:inset 0 0 30px #0009}
 .card-stage img.reversed{transform:rotate(180deg)}
-.card-fallback{height:100%;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;border:6px double #e1b774;border-radius:10px;background:radial-gradient(circle at 45% 38%,#6a3a93,#21132f 65%,#120b1c);text-align:center;padding:9px;color:#f3d8ac}.card-fallback .rune{font:76px Georgia,serif;text-shadow:0 0 26px #dfb3ff}.card-fallback b{font:600 clamp(12px,1.4cqw,20px) Georgia,serif}.card-fallback small{font-size:clamp(9px,.95cqw,14px)}
+.card-fallback{height:100%;display:flex;flex-direction:column;gap:8px;align-items:center;justify-content:center;border:6px double #e1b774;border-radius:10px;background:radial-gradient(circle at 45% 38%,#6a3a93,#21132f 65%,#120b1c);text-align:center;padding:9px;color:#f3d8ac}.card-fallback .rune{font:76px var(--serif);text-shadow:0 0 26px #dfb3ff}.card-fallback b{font:600 clamp(12px,1.4cqw,20px) var(--serif)}.card-fallback small{font-size:clamp(9px,.95cqw,14px)}
 .card-fallback.reversed{transform:rotate(180deg)}
 .reading-pane{position:absolute;left:48.6%;top:23.7%;width:30.3%;height:47.7%;z-index:4;border:1.5px solid #bd965f;border-radius:17px;background:linear-gradient(145deg,#191322fa,#0b0a12fa);padding:2.2% 2.3%;box-shadow:inset 0 0 28px #6a4b6d55,0 18px 50px #000b;display:flex;flex-direction:column;gap:1.7%}
 .reading-pane:before,.reading-pane:after{content:'✦';position:absolute;color:#e1b878;font-size:22px;line-height:1}.reading-pane:before{top:-12px;left:-6px}.reading-pane:after{bottom:-11px;right:-5px}
-.reading-pane .kicker{color:#edc98e;font-size:clamp(10px,1.2cqw,17px);text-align:center}.reading-pane h2{font:600 clamp(16px,1.9cqw,27px) Georgia,serif;line-height:1.12;color:#f6dcac;text-align:center;margin:0}.reading-pane .thai-name{text-align:center;color:#e3d1bf;font:500 clamp(10px,1.05cqw,15px) var(--serif)}
+.reading-pane .kicker{color:#edc98e;font-size:clamp(10px,1.2cqw,17px);text-align:center}.reading-pane h2{font:600 clamp(16px,1.9cqw,27px) var(--serif);line-height:1.12;color:#f6dcac;text-align:center;margin:0}.reading-pane .thai-name{text-align:center;color:#e3d1bf;font:500 clamp(10px,1.05cqw,15px) var(--serif)}
 .reading-pane .underline{height:1px;background:linear-gradient(90deg,transparent,#d3ac75,transparent);margin:1.3% 0}.reading-scroll{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#a875b3 transparent}
 .reading-scroll p{margin:0 0 10px;font:400 clamp(10px,1.06cqw,15px)/1.72 var(--sans);color:#f3e6e5}.read-label{color:#bce9c8;font-size:clamp(9px,1cqw,14px);letter-spacing:.05em}.reading-pane .direction{font-size:clamp(9px,.94cqw,13px);text-align:center;color:#cfaeff}
 .reading-next{position:absolute;top:78.2%;left:37.7%;width:24.6%;height:5.5%;z-index:5;display:grid;place-items:center;border:1px solid #edcb94;border-radius:40px;background:linear-gradient(180deg,#24122f,#120e1b);color:#f6dfb5;box-shadow:0 0 24px #9f57d482;font:500 clamp(12px,1.4cqw,20px) var(--serif)}
@@ -157,7 +157,7 @@ button,.ui{position:relative;z-index:3}.click-target{position:absolute;border:no
 .loading-progress-wrap{position:absolute;top:55%;width:min(68%,580px);display:flex;flex-direction:column;align-items:center;gap:10px}
 .progress-track{box-sizing:border-box;width:100%;height:clamp(9px,1.1cqh,15px);border-radius:999px;padding:2px;border:1px solid #e1bdff99;background:#140d20cc;box-shadow:0 0 28px #9b66e65c,inset 0 0 12px #0008;overflow:hidden}
 .progress-fill{height:100%;width:var(--p,0%);border-radius:999px;background:linear-gradient(90deg,#8560d8,#cf99ff,#f3d4ac);box-shadow:0 0 20px #c788ff;transition:width .45s ease}
-.progress-percent{font:600 clamp(21px,2.5cqw,36px) Georgia,serif;color:#ffe2b7;text-shadow:0 0 16px #cd90ff}
+.progress-percent{font:600 clamp(21px,2.5cqw,36px) var(--serif);color:#ffe2b7;text-shadow:0 0 16px #cd90ff}
 .progress-status{font-size:clamp(11px,1.2cqw,17px);line-height:1.55;color:#eee0ef;min-height:2.4em}
 .loading-error{position:absolute;z-index:8;left:29%;top:39%;width:42%;padding:22px 24px;border:1px solid #e5bd90;border-radius:20px;background:#130d1cef;text-align:center;box-shadow:0 18px 50px #000c;color:#f7e8e3}
 .loading-error strong{display:block;color:#f3d5a5;font:600 clamp(17px,2cqw,27px) var(--serif);margin-bottom:7px}.loading-error p{font-size:clamp(11px,1.15cqw,16px);line-height:1.65;margin:0 0 13px}
@@ -221,7 +221,7 @@ button,.ui{position:relative;z-index:3}.click-target{position:absolute;border:no
   pointer-events:none;
 }
 .read-era-clean:after{
-  color:#8e768f;font:500 clamp(7px,.68cqw,10px)/1 Georgia,serif;
+  color:#8e768f;font:500 clamp(7px,.68cqw,10px)/1 var(--serif);
   letter-spacing:.16em;opacity:.62;text-shadow:0 1px 4px #000;
 }
 .read-era-clean.insight{top:50.7%}.read-era-clean.insight:after{content:'INSIGHT'}
@@ -401,13 +401,13 @@ html,body{background:#07060a}
 .loading-title{font:500 clamp(24px,2.7cqw,38px)/1.4 var(--serif)!important;color:#ead3aa!important;text-shadow:0 4px 24px rgba(0,0,0,.75)!important;letter-spacing:.012em}
 .wait-card-trio{display:flex;gap:clamp(12px,1.7cqw,22px);align-items:center;justify-content:center;margin-top:5.5%;height:35%;}
 .wait-ritual-card{width:clamp(74px,8.5cqw,122px);aspect-ratio:.655;border:1px solid rgba(226,196,145,.72);border-radius:8px;background:radial-gradient(circle at 50% 48%,#2a2033 0,#17121d 58%,#0d0a10 100%);box-shadow:0 16px 32px rgba(0,0,0,.48),inset 0 0 0 5px rgba(213,180,125,.08),inset 0 0 0 6px rgba(213,180,125,.22);position:relative;animation:v3CardBreath 3.2s ease-in-out infinite;}
-.wait-ritual-card::before{content:"☾";position:absolute;inset:0;display:grid;place-items:center;color:#c8a874;font:400 clamp(27px,3.6cqw,48px) Georgia,serif;text-shadow:0 0 20px rgba(199,155,208,.22)}
+.wait-ritual-card::before{content:"☾";position:absolute;inset:0;display:grid;place-items:center;color:#c8a874;font:400 clamp(27px,3.6cqw,48px) var(--serif);text-shadow:0 0 20px rgba(199,155,208,.22)}
 .wait-ritual-card:nth-child(1){transform:rotate(-4deg);animation-delay:-.8s}.wait-ritual-card:nth-child(2){animation-delay:-1.8s}.wait-ritual-card:nth-child(3){transform:rotate(4deg);animation-delay:-2.6s}
 @keyframes v3CardBreath{0%,100%{translate:0 2px;filter:brightness(.88)}50%{translate:0 -5px;filter:brightness(1.06)}}
 .loading-progress-wrap{top:auto!important;bottom:7%!important;width:min(58%,620px)!important}
 .progress-track{height:2px!important;background:rgba(233,215,190,.16)!important;border:0!important;border-radius:0!important;overflow:visible!important}
 .progress-fill{height:2px!important;background:linear-gradient(90deg,#8f7458,#e6c995,#f3deba)!important;box-shadow:0 0 9px rgba(231,199,148,.42)!important;border-radius:0!important}
-.progress-percent{font:500 clamp(14px,1.35cqw,18px) Georgia,serif!important;color:#d5bc92!important;margin-top:12px!important}
+.progress-percent{font:500 clamp(14px,1.35cqw,18px) var(--serif)!important;color:#d5bc92!important;margin-top:12px!important}
 .progress-status{font-size:clamp(9px,.9cqw,12px)!important;color:#afa5a8!important;letter-spacing:.025em!important;margin-top:4px!important}
 
 /* Reading — reveal first, typography second, frame almost disappears */
