@@ -760,6 +760,21 @@ html,body{background:#07060a}
 </style>
 
 <!-- TAROTX V3.4.4.5 — concise pre-reading disclaimer -->
+
+<style id="v3447-reading-mask-fix">
+/* V3.4.4.7 — keep the artwork cleanup mask below live reading content. */
+.stage[data-screen="read"] .reading-action-mask{
+  z-index:2!important;
+  pointer-events:none!important;
+}
+.stage[data-screen="read"] .reading-pane.unified{
+  z-index:5!important;
+}
+.stage[data-screen="read"] .reading-next{
+  z-index:6!important;
+}
+</style>
+
 </head><body><div id="viewport" aria-live="polite"></div><noscript style="color:#fff;position:fixed;top:30px;left:30px">ต้องเปิด JavaScript จึงจะใช้งาน TAROTX ได้</noscript>
 <script id="tarotx-bundled-engine">
 
